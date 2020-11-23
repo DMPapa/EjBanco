@@ -1,0 +1,13 @@
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\obj\Debug\EjBanco.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\bin\Debug\EjBanco.Negocio.dll
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\bin\Debug\EjBanco.Negocio.pdb
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\bin\Debug\EjBanco.Datos.dll
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\bin\Debug\EjBanco.Entidades.dll
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\bin\Debug\EjBanco.Datos.pdb
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\bin\Debug\EjBanco.Entidades.pdb
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\bin\Debug\Newtonsoft.Json.xml
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\obj\Debug\EjBanco.Negocio.csprojAssemblyReference.cache
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\obj\Debug\EjBanco.Negocio.csproj.CopyComplete
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\obj\Debug\EjBanco.Negocio.dll
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Negocio\obj\Debug\EjBanco.Negocio.pdb

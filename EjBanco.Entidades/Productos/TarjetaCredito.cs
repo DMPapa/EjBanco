@@ -50,7 +50,6 @@ namespace EjBanco.Entidades
             _limiteCompra = limitecompra;
             _nroPlastico = nroplastico;
             _idCliente = idcliente;
-            _usuario = "870931";
         }
     }
 }

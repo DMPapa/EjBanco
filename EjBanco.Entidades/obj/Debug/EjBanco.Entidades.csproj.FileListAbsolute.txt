@@ -4,3 +4,9 @@ C:\Users\NyD\Desktop\Diego\CAI\Practica\EjCuentas\EjBanco.Entidades\obj\Debug\Ej
 C:\Users\NyD\Desktop\Diego\CAI\Practica\EjCuentas\EjBanco.Entidades\obj\Debug\EjBanco.Entidades.csproj.CoreCompileInputs.cache
 C:\Users\NyD\Desktop\Diego\CAI\Practica\EjCuentas\EjBanco.Entidades\obj\Debug\EjBanco.Entidades.dll
 C:\Users\NyD\Desktop\Diego\CAI\Practica\EjCuentas\EjBanco.Entidades\obj\Debug\EjBanco.Entidades.pdb
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Entidades\bin\Debug\EjBanco.Entidades.dll
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Entidades\bin\Debug\EjBanco.Entidades.pdb
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Entidades\obj\Debug\EjBanco.Entidades.csprojAssemblyReference.cache
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Entidades\obj\Debug\EjBanco.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Entidades\obj\Debug\EjBanco.Entidades.dll
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco.Entidades\obj\Debug\EjBanco.Entidades.pdb

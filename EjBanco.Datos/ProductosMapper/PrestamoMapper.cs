@@ -34,20 +34,20 @@ namespace EjBanco.Datos
             n.Add("idTipo", prestamo.IdTipo.ToString());
             n.Add("monto", prestamo.Monto.ToString());
             n.Add("cuota", prestamo.Cuota.ToString());
-            n.Add("usuario", ConfigurationManager.AppSettings["870931"]);
+            n.Add("usuario", ConfigurationManager.AppSettings["legajo"]);
             n.Add("tipoPrest", prestamo.PrestamoTipo.ToString());
                 return n;
         }
         public TransactionResult Insert(Prestamo prestamo)
         {
             NameValueCollection obj = ReverseMap(prestamo);
-            string resultado = WebHelper.Post("/api/v1/prestamo", obj);
+            string resultado = WebHelper.Post("/api/v1/prestamo/", obj);
             TransactionResult resultadotransaccion = MapResultado(resultado);
             return resultadotransaccion;
         }
         public List<Prestamo> TraerPrestamos()
         {
-            string json2 = WebHelper.Get("/api/v1/prestamo" + ConfigurationManager.AppSettings["870931"]);
+            string json2 = WebHelper.Get("/api/v1/prestamo/" + ConfigurationManager.AppSettings["legajo"]);
             List<Prestamo> resultado = MapList(json2);
             return resultado;
         }

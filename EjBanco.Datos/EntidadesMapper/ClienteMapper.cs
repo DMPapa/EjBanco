@@ -14,8 +14,7 @@ namespace EjBanco.Datos
     {
         private List<Cliente> MapList(string json)
         {
-            List<Cliente> n = JsonConvert.DeserializeObject<List<Cliente>>(json);
-            return n;
+            return JsonConvert.DeserializeObject<List<Cliente>>(json);
         }
         private TransactionResult MapResultado(string json)
         {
@@ -28,9 +27,9 @@ namespace EjBanco.Datos
             n.Add("nombre", cliente.Nombre);
             n.Add("Apellido", cliente.Apellido);
             n.Add("Direccion", cliente.Direccion);
-            n.Add("usuario", ConfigurationManager.AppSettings["870931"]);
+            n.Add("usuario", ConfigurationManager.AppSettings["legajo"]);
             n.Add("Email", cliente.Email);
-            n.Add("Telefono", cliente.Telefono.ToString());
+            n.Add("Telefono", cliente.Telefono);
             n.Add("FechaNacimiento", cliente.FechaNacimiento.ToShortDateString());
             n.Add("Activo", cliente.Activo.ToString());
 
@@ -39,13 +38,13 @@ namespace EjBanco.Datos
         public TransactionResult Insert(Cliente cliente)
         {
             NameValueCollection obj = ReverseMap(cliente);
-            string result = WebHelper.Post("/api/v1/cliente", obj);
+            string result = WebHelper.Post("/api/v1/cliente/", obj);
             TransactionResult resultadoTransaccion = MapResultado(result);
             return resultadoTransaccion;
         }
         public List<Cliente> TraerClientes()
         {
-            string json2 = WebHelper.Get("api/v1/cliente" + ConfigurationManager.AppSettings["870931"]);
+            string json2 = WebHelper.Get("/api/v1/cliente/" + ConfigurationManager.AppSettings["legajo"]);
             List<Cliente> resultado = MapList(json2);
             return resultado;
         }

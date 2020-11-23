@@ -33,20 +33,20 @@ namespace EjBanco.Datos
             n.Add("capitalInicial", plazofijo.CapitaInicial.ToString());
             n.Add("tasa", plazofijo.Tasa.ToString());
             n.Add("interes", plazofijo.Interes.ToString());
-            n.Add("usuario", plazofijo.Usuario.ToString());
+            n.Add("usuario", ConfigurationManager.AppSettings["legajo"]);
 
-                return n;
+            return n;
         }
         public TransactionResult Insert(PlazoFijo plazofijo)
         {
             NameValueCollection obj = ReverseMap(plazofijo);
-            string result = WebHelper.Post("/api/v1/plazofijo", obj);
+            string result = WebHelper.Post("/api/v1/plazofijo/", obj);
             TransactionResult resultadotransaccion = MapResultado(result);
             return resultadotransaccion;
         }
         public List<PlazoFijo> TraerPlazosFijos()
         {
-            string json2 = WebHelper.Get("api/v1/plazofijo/" + "870931");
+            string json2 = WebHelper.Get("api/v1/plazofijo/" + ConfigurationManager.AppSettings["legajo"]);
             List<PlazoFijo> resultado = MapList(json2);
             return resultado;
         }

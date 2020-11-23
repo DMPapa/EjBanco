@@ -21,7 +21,7 @@ namespace EjBanco.Datos
 
         public List<PrestamoTipo> TraerPrestamosTipos()
         {
-            string json2 = WebHelper.Get("/api/v1/prestamotipo");
+            string json2 = WebHelper.Get("/api/v1/prestamotipo/");
             List<PrestamoTipo> resultado = MapList(json2);
             return resultado;
         }

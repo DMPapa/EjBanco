@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Grupo5_Hotel.Negocio
+namespace EjBanco.Negocio
 {
     public static class Validacion
     {
@@ -18,6 +18,16 @@ namespace Grupo5_Hotel.Negocio
             }
             else if (nro < 0){
                 error = campoEsperado + " debe ser positivo" + "\n";
+            }
+            return error;
+        }
+        public static string ValidarFloat(string input, string campoEsperado)
+        {
+            float nro;
+            string error = "";
+            if (!float.TryParse(input, out nro))
+            {
+                error = campoEsperado + " debe ser float" + "\n";
             }
             return error;
         }

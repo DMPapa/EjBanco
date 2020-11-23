@@ -10,16 +10,16 @@ namespace EjBanco.Negocio
 {
     public class CuentaServicio
     {
-        private CuentaMapper mapper;
-        
+        public CuentaMapper mapper;
+
         public CuentaServicio()
         {
-            CuentaMapper mapper = new CuentaMapper();
+           mapper = new CuentaMapper();
         }
 
-        public List <Cuenta> TraerCuentas()
+        public List<Cuenta> TraerCuentas()
         {
-            return mapper.TraerCuentas();
+                return mapper.TraerCuentas();
         }
         public int InsertarCuenta(int nrocuenta, string descripcion, float saldo, int idcliente, int id)
         {
@@ -30,6 +30,18 @@ namespace EjBanco.Negocio
                 return resultado.Id;
             else
                 throw new Exception("Ha habido un erro al crear cuenta" + resultado.Error);
+
+        }
+        public int ProximoId()
+        {
+            /*if (mapper.TraerCuentas() == null)*/
+                return 508;
+            /*else
+            {
+                List<Cuenta> lista = mapper.TraerCuentas();
+                return (lista.Max(cuenta => cuenta.Id) + 1);
+            }*/
+
         }
     }
 }

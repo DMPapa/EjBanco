@@ -13,12 +13,10 @@ namespace EjBanco.Entidades
         private string _apellido;
         private string _direccion;
         private string _email;
-        private int _telefono;
+        private string _telefono;
         private DateTime _fechaNacimiento;
         private DateTime _fechaAlta;
         private bool _activo;
-        private string _usuario;
-        private string _host;
         private int _id;
 
         public int Dni
@@ -46,7 +44,7 @@ namespace EjBanco.Entidades
             get { return this._email; }
             set { this._email = value; }
         }
-        public int Telefono
+        public string Telefono
         {
             get { return this._telefono; }
             set { this._telefono = value; }
@@ -70,10 +68,8 @@ namespace EjBanco.Entidades
             get { return this._id; }
             set { this._id = value; }
         }
-        public string Usuario
-        { get { return this._usuario; } }
         public Cliente() { }
-        public Cliente(int dni, string nombre, string apellido, string email, int telefono, DateTime fechanacimiento, int id )
+        public Cliente(int dni, string nombre, string apellido, string email, string telefono, DateTime fechanacimiento, int id )
         {
             _dni = dni;
             _nombre = nombre;
@@ -84,7 +80,10 @@ namespace EjBanco.Entidades
             _fechaAlta = DateTime.Today;
             _activo = true;
             _id = id;
-            _usuario = "870931";
+        }
+        public override string ToString()
+        {
+            return (_nombre + _apellido + " - ID: " + _id);
         }
     }
 }

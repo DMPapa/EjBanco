@@ -70,6 +70,7 @@ namespace EjBanco.Entidades
             _idCliente = idcliente;
             _id = id;
         }
+
     }
 
 

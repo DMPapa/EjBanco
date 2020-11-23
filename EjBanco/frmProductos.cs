@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace EjBanco
 {
-    public partial class Form1 : Form
+    public partial class frmProductos : Form
     {
-        public Form1()
+        public frmProductos()
         {
             InitializeComponent();
+        }
+
+        private void btnCuentas_Click(object sender, EventArgs e)
+        {
+            frmCuentas cuentas = new frmCuentas();
+            cuentas.Owner = this;
+            cuentas.Show();
+            this.Hide();
         }
     }
 }

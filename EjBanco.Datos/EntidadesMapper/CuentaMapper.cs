@@ -38,14 +38,16 @@ namespace EjBanco.Datos
         }
         public List<Cuenta> TraerCuentas()
         {
-            string json2 = WebHelper.Get("api/v1/cliente");
+            string json2 = WebHelper.Get("/api/v1/cuenta/" + ConfigurationManager.AppSettings["legajo"]);
             List<Cuenta> resultado = MapList(json2);
             return resultado;
         }
+
+
         public TransactionResult Insert(Cuenta cuenta)
         {
             NameValueCollection obj = ReverseMap(cuenta);
-            string result = WebHelper.Post("/api/v1/cuenta", obj);
+            string result = WebHelper.Post("/api/v1/cuenta/", obj);
             TransactionResult resultadoTransaccion = MapResultado(result);
             return resultadoTransaccion;
         }

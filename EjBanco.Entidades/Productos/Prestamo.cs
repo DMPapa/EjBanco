@@ -16,7 +16,6 @@ namespace EjBanco.Entidades
         private int _idTipo;
         private double _monto;
         private double _cuota;
-        private string _usuario;
         private PrestamoTipo _prestamoTipo;
 
         public int Id
@@ -64,8 +63,6 @@ namespace EjBanco.Entidades
             get { return this._prestamoTipo; }
             set { this._prestamoTipo = value; }
         }
-        public string Usuario
-        { get { return this._usuario; } }
         public Prestamo() { }
         public Prestamo(int id, double tna, string linea, int plazo, int idcliente, int idtipo, double monto, double cuota, PrestamoTipo prestamotipo)
         {
@@ -78,7 +75,6 @@ namespace EjBanco.Entidades
             _monto = monto;
             _cuota = cuota;
             _prestamoTipo = prestamotipo;
-            _usuario = "870931";
 
         }
     }

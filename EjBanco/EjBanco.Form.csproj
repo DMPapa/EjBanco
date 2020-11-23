@@ -46,16 +46,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmAltaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmAltaCliente.Designer.cs">
+      <DependentUpon>frmAltaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaCuenta.Designer.cs">
+      <DependentUpon>frmAltaCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCuentas.Designer.cs">
+      <DependentUpon>frmCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuInicial.Designer.cs">
+      <DependentUpon>MenuInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmAltaCliente.resx">
+      <DependentUpon>frmAltaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaCuenta.resx">
+      <DependentUpon>frmAltaCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCuentas.resx">
+      <DependentUpon>frmCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuInicial.resx">
+      <DependentUpon>MenuInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +123,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EjBanco.Entidades\EjBanco.Entidades.csproj">
+      <Project>{72e0ee4b-dec4-42d6-a493-a6ae7d832aba}</Project>
+      <Name>EjBanco.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EjBanco.Negocio\EjBanco.Negocio.csproj">
+      <Project>{1e7b7abe-751d-4c0e-ab54-2690b91425ac}</Project>
+      <Name>EjBanco.Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

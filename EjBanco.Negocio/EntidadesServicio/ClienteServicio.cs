@@ -21,7 +21,7 @@ namespace EjBanco.Negocio
             return mapper.TraerClientes();
         }
 
-        public int InsertarCliente(int dni, string nombre, string apellido, string email, int telefono, DateTime fechanacimiento, bool activo, int id)
+        public int InsertarCliente(int dni, string nombre, string apellido, string email, string telefono, DateTime fechanacimiento, bool activo, int id)
         {
             Cliente c = new Cliente(dni, nombre, apellido, email, telefono, fechanacimiento,id);
 
@@ -30,6 +30,12 @@ namespace EjBanco.Negocio
                 return transaccion.Id;
             else
                 throw new Exception("ha habido un error al crear cliente" + transaccion.Error);
+        }
+        public int ProximoId()
+        {
+            List<Cliente> lista = mapper.TraerClientes();
+            return (lista.Max(cliente => cliente.Id) + 1);
+
         }
 
     }

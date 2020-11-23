@@ -15,7 +15,6 @@ namespace EjBanco.Entidades
         private double _capitalInicial;
         private double _tasa;
         private double _interes;
-        private string _usuario;
         
         public int IdCliente
         {
@@ -50,8 +49,6 @@ namespace EjBanco.Entidades
             get { return this._interes; }
             set { this._interes = value; }
         }
-        public string Usuario
-        { get { return this._usuario; } }
         public PlazoFijo() { }
         public PlazoFijo(int idcliente, int id, int tipo, int dias, double capitalinicial, double tasa, double interes)
         {
@@ -62,7 +59,6 @@ namespace EjBanco.Entidades
             _capitalInicial = capitalinicial;
             _tasa = tasa;
             _interes = interes;
-            _usuario = "870931";
         }
             
     }
