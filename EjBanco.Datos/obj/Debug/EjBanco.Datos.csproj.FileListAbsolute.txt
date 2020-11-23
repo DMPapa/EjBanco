@@ -1,0 +1,2 @@
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjCuentas\EjBanco.Datos\obj\Debug\EjBanco.Datos.csprojAssemblyReference.cache
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjCuentas\EjBanco.Datos\obj\Debug\EjBanco.Datos.csproj.CoreCompileInputs.cache
