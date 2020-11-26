@@ -20,7 +20,7 @@ namespace EjBanco.Entidades
         {
             get { return this._linea; }
         }
-        public double Id
+        public int Id
         {
             get { return this._id; }
         }

@@ -14,7 +14,7 @@ namespace EjBanco.Negocio
 
         public PrestamoTipoServicio()
         {
-            PrestamoTipoMapper mapper = new PrestamoTipoMapper();
+            mapper = new PrestamoTipoMapper();
         }
 
         public List<PrestamoTipo> TraerTiposDePrestamos()

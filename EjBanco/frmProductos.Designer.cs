@@ -75,6 +75,7 @@
             this.btnPrestamos.TabIndex = 3;
             this.btnPrestamos.Text = "Prestamos";
             this.btnPrestamos.UseVisualStyleBackColor = true;
+            this.btnPrestamos.Click += new System.EventHandler(this.btnPrestamos_Click);
             // 
             // btnTC
             // 

@@ -30,7 +30,7 @@ namespace EjBanco.Datos
             n.Add("usuario", ConfigurationManager.AppSettings["legajo"]);
             n.Add("Email", cliente.Email);
             n.Add("Telefono", cliente.Telefono);
-            n.Add("FechaNacimiento", cliente.FechaNacimiento.ToShortDateString());
+            n.Add("FechaNacimiento", cliente.FechaNacimiento.ToString("yyyy-MM-dd"));
             n.Add("Activo", cliente.Activo.ToString());
 
             return n;

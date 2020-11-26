@@ -22,3 +22,4 @@ C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco\obj\Debug\EjBanco.exe
 C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco\obj\Debug\EjBanco.pdb
 C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco\obj\Debug\EjBanco.frmAltaCuenta.resources
 C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco\obj\Debug\EjBanco.frmCuentas.resources
+C:\Users\NyD\Desktop\Diego\CAI\Practica\EjBanco\EjBanco\obj\Debug\EjBanco.frmPrestamos.resources

@@ -31,6 +31,16 @@ namespace EjBanco.Negocio
             }
             return error;
         }
+        public static string ValidarDouble(string input, string campoEsperado)
+        {
+            double nro;
+            string error = "";
+            if (!double.TryParse(input, out nro))
+            {
+                error = campoEsperado + " debe ser double" + "\n";
+            }
+            return error;
+        }
         public static string ValidarString (string input, string campoEsperado)
         {
             string error = "";

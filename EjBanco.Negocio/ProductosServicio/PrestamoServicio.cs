@@ -11,25 +11,43 @@ namespace EjBanco.Negocio
     public class PrestamoServicio
     {
         private PrestamoMapper mapper;
+        private List<Operador> operadorLista;
+        private Operador operador;
 
         public PrestamoServicio()
         {
-            PrestamoMapper mapper = new PrestamoMapper();
+             mapper = new PrestamoMapper();
         }
 
-        public List <Prestamo> TraerPrestamos()
+        public List <Operador> TraerPrestamosOperador()
         {
-            return mapper.TraerPrestamos();
+            operadorLista = new List<Operador>();
+            foreach (Prestamo p in mapper.TraerPrestamos())
+                operadorLista.Add(new Operador(p));
+            return operadorLista;
         }
-        public int InsertarPrestamo(int id, double tna, string linea, int plazo, int idcliente, int idtipo, double monto, double cuota, PrestamoTipo prestamotipo)
+        public int InsertarPrestamo(Prestamo p)
         {
-            Prestamo p = new Prestamo(id, tna, linea, plazo, idcliente, idtipo, monto, cuota, prestamotipo);
-
             TransactionResult resultado = mapper.Insert(p);
             if (resultado.IsOk)
                 return resultado.Id;
             else
                 throw new Exception("Ha habido un error al crear préstamo" + resultado.Error);
         }
+        public double SimularCuotaCapital(Operador o)
+        {
+            return o.Prestamo.CalcularCuotaCapital();
+        }
+        public double SimularCuotaInteres(Operador o)
+        {
+            return o.Prestamo.CalcularCuotaInteres();
+        }
+        public int ProximoId()
+        {
+            List<Prestamo> lista = mapper.TraerPrestamos();
+            return (lista.Max(cuenta => cuenta.Id) + 1);
+
+        }
+        
     }
 }

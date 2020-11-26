@@ -28,8 +28,8 @@ namespace EjBanco.Datos
             n.Add("NroCuenta", cuenta.NroCuenta.ToString());
             n.Add("Descripcion", cuenta.Descripcion);
             n.Add("Saldo", cuenta.Saldo.ToString());
-            n.Add("FechaApertura", cuenta.FechaApertura.ToShortDateString());
-            n.Add("FechaModificacion", cuenta.FechaModificacion.ToShortDateString());
+            n.Add("FechaApertura", cuenta.FechaApertura.ToString("yyyy-MM-dd"));
+            n.Add("FechaModificacion", cuenta.FechaModificacion.ToString("yyyy-MM-dd"));
             n.Add("Activo", cuenta.Activo.ToString());
             n.Add("idCliente", cuenta.IdCliente.ToString());
             n.Add("id", cuenta.Id.ToString());

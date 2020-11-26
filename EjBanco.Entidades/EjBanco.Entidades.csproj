@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\Cuenta.cs" />
+    <Compile Include="Operador.cs" />
     <Compile Include="Productos\PlazoFijo.cs" />
     <Compile Include="Productos\Prestamo.cs" />
     <Compile Include="Productos\PrestamoTipo.cs" />

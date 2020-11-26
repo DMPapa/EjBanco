@@ -24,5 +24,13 @@ namespace EjBanco
             cuentas.Show();
             this.Hide();
         }
+
+        private void btnPrestamos_Click(object sender, EventArgs e)
+        {
+            frmPrestamos prestamos = new frmPrestamos();
+            prestamos.Owner = this;
+            prestamos.Show();
+            this.Hide();
+        }
     }
 }

@@ -64,7 +64,7 @@ namespace EjBanco.Entidades
             set { this._prestamoTipo = value; }
         }
         public Prestamo() { }
-        public Prestamo(int id, double tna, string linea, int plazo, int idcliente, int idtipo, double monto, double cuota, PrestamoTipo prestamotipo)
+        public Prestamo(int id, double tna, string linea, int plazo, int idcliente, int idtipo, double monto, PrestamoTipo prestamotipo)
         {
             _id = id;
             _tna = tna;
@@ -73,9 +73,19 @@ namespace EjBanco.Entidades
             _idCliente = idcliente;
             _idTipo = idtipo;
             _monto = monto;
-            _cuota = cuota;
+            _cuota = CalcularCuotaCapital() + CalcularCuotaInteres();
             _prestamoTipo = prestamotipo;
 
         }
+
+        public double CalcularCuotaCapital()
+        {
+            return (_monto / _plazo);
+        }
+        public double CalcularCuotaInteres()
+        {
+            return (CalcularCuotaCapital() * ((_prestamoTipo.TNA / 12 / 100)));
+        }
+
     }
 }

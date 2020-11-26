@@ -10,7 +10,7 @@ namespace EjBanco.Negocio
 {
     public class CuentaServicio
     {
-        public CuentaMapper mapper;
+        private CuentaMapper mapper;
 
         public CuentaServicio()
         {
@@ -34,13 +34,8 @@ namespace EjBanco.Negocio
         }
         public int ProximoId()
         {
-            /*if (mapper.TraerCuentas() == null)*/
-                return 508;
-            /*else
-            {
                 List<Cuenta> lista = mapper.TraerCuentas();
                 return (lista.Max(cuenta => cuenta.Id) + 1);
-            }*/
 
         }
     }
